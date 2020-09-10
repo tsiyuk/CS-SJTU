@@ -1,1 +1,1 @@
-## lonngInt Project
+## longInt Project
