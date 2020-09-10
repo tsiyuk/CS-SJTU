@@ -1,3 +1,8 @@
+/*
+使用链表存储长整型数
+实现两个长整型数的遍历输出，大小比较，加法以及减法（只允许大数减小数）
+*/
+
 #include <iostream>
 using namespace std;
 
