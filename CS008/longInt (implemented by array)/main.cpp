@@ -1,37 +1,35 @@
 #include <iostream>
-#include <cstring>
-#include"longInt.h"
+#include "signedLongInt.h"
+#include "longInt.h"
 using namespace std;
 
 int main()
 {
-	char n1[129], n2[129];
+	signedLongInt num1, num2;
 	cout << "please input num1." << endl;
-	cin.getline(n1, 128);
+	cin >> num1;
 	cout << "please input num2." << endl;
-	cin.getline(n2, 128);
-	longInt num1(n1), num2(n2);
-	num1.output();
-	cout << " + ";
-	num2.output();
-	cout << " = ";
-	longInt num3 = add(num1, num2);
-	num3.output();
-	cout<<endl;
-    num1.output();
-    cout<<" > ";
-    num2.output();
-	if(!Greater(num1,num2))
-    {
-        cout<<"False"<<endl;
-        num2.output();
-        cout<<" - ";
-        num1.output();
-        cout<<" = ";
-        longInt num4 = sub(num2, num1);
-        num4.output();
-    }
-	else cout<<"True";
+	cin >> num2;
+	cout << num1 << " + " << num2 << " = ";
+	signedLongInt num3 = num1 + num2;
+	cout << num3 << endl;
+	cout << num1 << " >= " << num2 << ' ';
+	(num1 >= num2) ? (cout << "True\n") : (cout << "False\n");
+	cout << num1 << " == " << num2 << ' ';
+	(num1 == num2) ? (cout << "True\n") : (cout << "False\n");
+	signedLongInt num4 = num1 - num2;
+	cout << num1 << " - " << num2 << " = " << num4 << endl;
+	cout << num1++ << ' ';
+	cout << ++num1 << endl;
+	cout << num2-- << ' ';
+	cout << --num2 << endl;
+	longInt n1, n2;
+	cout << "please input num1." << endl;
+	cin >> n1;
+	cout << "please input num2." << endl;
+	cin >> n2;
+	longInt n5 = multi(n1,n2);
+	cout << n5 << endl;
 
 	return 0;
 }
