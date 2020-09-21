@@ -1,4 +1,4 @@
-// ouput all the permutations of the given array by recursion
+// output all the permutations of the given array by recursion
 #include <iostream>
 
 using namespace std;
