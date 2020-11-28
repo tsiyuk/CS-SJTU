@@ -37,7 +37,7 @@ private:
 	void preOrder(Node *t) const;
 	void midOrder(Node *t) const;
 	void postOrder(Node *t) const;
-	void exchange(Node *t);															//6-1 exchange the left subtree and the right subtree of a binary tree
+	void exchange(Node *t);														//6-1 exchange the left subtree and the right subtree of a binary tree
 	int countDegreeTwo(Node *t);													//6-2 count the number of the vertice of degree 2 in a binary tree
 	int size(binaryTree<T>::Node *t) const;										
 	int height(binaryTree<T>::Node *t) const;										
@@ -53,18 +53,18 @@ public:
 	T Root(T flag) const;		 //return the root
 	T lchild(T x, T flag) const; //return left child
 	T rchild(T x, T flag) const; //return right child
-	void delLeft(T x);			 //delete the left child vertex
-	void delRight(T x);			 //delete the right child vertex
+	void delLeft(T x);		//delete the left subtree
+	void delRight(T x);		//delete the right subtree
 	void preOrder() const;		 //pre-order
 	void midOrder() const;		 //in-order
 	void postOrder() const;		 //post-order
 	void levelOrder() const;	 //level-order
 	void createTree(T flag);	 //create a new binary tree, parameter flag represents the empty node
-	void exchange();			 //6-1 exchange the left subtree and the right subtree of a binary tree
-	int countDegreeTwo();		 //6-2 count the number of the vertice of degree 2 in a binary tree
-	int size() const;			 //return the size of the binary tree
-	bool isFull() const;		 //6-3 check whether the binary tree is a full binary tree
-	bool isComplete() const;	 //6-4 check whether the binary tree is a complete binary tree
-	int height() const;			 //return the height of the binary tree
+	void exchange();		//6-1 exchange the left subtree and the right subtree of a binary tree
+	int countDegreeTwo();		//6-2 count the number of the vertice of degree 2 in a binary tree
+	int size() const;		//return the size of the binary tree
+	bool isFull() const;		//6-3 check whether the binary tree is a full binary tree
+	bool isComplete() const;	//6-4 check whether the binary tree is a complete binary tree
+	int height() const;		//return the height of the binary tree
 	T parent(T x, T flag) const { return flag; }
 };
