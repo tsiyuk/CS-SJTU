@@ -4,7 +4,6 @@
 
 
 ### CS008 Programming Methodology in C++  
-~~Actually the same as CS154~~  
 
 
 
