@@ -384,12 +384,12 @@ longInt multi(const longInt &num1, const longInt &num2)
 		}
 		if(carry!=0) number[j][j+i] += carry;
 	}//乘法部分
-	for (int i=0;i<l2;++i)
-	{
-		for(int j=0;j<l;++j)
-			cout<<number[i][j]<<' ';
-		cout<<endl;
-	}
+	// for (int i=0;i<l2;++i)
+	// {
+	// 	for(int j=0;j<l;++j)
+	// 		cout<<number[i][j]<<' ';
+	// 	cout<<endl;
+	// }
 	int carry2 = 0;
 	for (int i = 0; i < l; ++i)
 	{
@@ -401,7 +401,6 @@ longInt multi(const longInt &num1, const longInt &num2)
 		tem += carry2;
 		carry2 = tem / 10;
 		result[i] = '0' + tem % 10;
-		cout<<result[i]<<' ';
 	}//加法部分
 	
 	int i = l;

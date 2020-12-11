@@ -1,6 +1,6 @@
 #include <iostream>
 #include "signedLongInt.h"
-#include "longInt.h"
+#include "conio.h"
 using namespace std;
 
 int main()
@@ -23,13 +23,10 @@ int main()
 	cout << ++num1 << endl;
 	cout << num2-- << ' ';
 	cout << --num2 << endl;
-	longInt n1, n2;
-	cout << "please input num1." << endl;
-	cin >> n1;
-	cout << "please input num2." << endl;
-	cin >> n2;
-	longInt n5 = multi(n1,n2);
-	cout << n5 << endl;
+	signedLongInt num5 = multiply(num1,num2);
+	cout << num1 << " * " << num2 << " = " << num5 << endl;
+	cout << "press any button to close" << endl;
+	getch();
 
 	return 0;
 }
