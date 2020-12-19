@@ -1,4 +1,4 @@
-## Assignments for Chapter 5 Binary Tree
+## Assignments for Chapter 6 Binary Tree
 * 6-1 exchange the left subtree and the right subtree of a binary tree
 * 6-2 count the number of the vertice of degree 2 in a binary tree
 * 6-3 check whether the binary tree is a full binary tree
