@@ -1,4 +1,4 @@
-## Assignment for Chapter 9 Dynamic Search
+## Assignment for Chapter 9 Dynamic Search Table
 
 ### Binary Search Tree
 * 9-1 check if every node in the BST satisfies the discipline of the BST
